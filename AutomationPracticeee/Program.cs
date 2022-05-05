@@ -19,6 +19,8 @@ namespace AutomationPracticeee
 
             //
             signin.SignInRunner();
+            //ContactUs.ContactUsRunner();
+            //HomePage.HomePageRunner();
 
             wait(5000);
             close();

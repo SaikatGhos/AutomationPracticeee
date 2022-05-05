@@ -76,6 +76,7 @@ namespace AutomationPracticeee
                 Console.WriteLine(e);
             }
         }
+        
         public static void SendKeys(propertype elementType, string element, string value)
         {
             if (elementType == propertype.Id)
