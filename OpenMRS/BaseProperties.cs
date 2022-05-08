@@ -7,6 +7,12 @@ using System.Threading.Tasks;
 
 namespace AutomationPracticeee
 {
+    enum scrollType
+    {
+        H,
+        V,
+        C
+    }
     enum driversType
     {
         chrome,

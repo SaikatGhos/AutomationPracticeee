@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using TestLib;
 namespace AutomationPracticeee
 {
     class ContactUs:BaseMethods
@@ -21,7 +21,7 @@ namespace AutomationPracticeee
         public static void ContactUsRunner()
         {
             ClickOnContactUsButton(propertype.Xpath, "//*[text()='Contact us']");
-            VScroll(300);
+            //Scroll(scrollType.V,300);
             ClickOnSubjectHandelling(propertype.Xpath, "//*[@id='id_contact']");
         }
     }

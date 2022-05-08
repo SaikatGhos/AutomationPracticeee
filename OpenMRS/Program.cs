@@ -4,29 +4,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TestLib;
 
-namespace AutomationPracticeee
+namespace OpenMRS
 {
-    internal class Program:BaseMethods
+    internal class Program
     {
         static void Main(string[] args)
         {
-            //driverInitializer(driversType.chrome);
             driver = new ChromeDriver();
 
-            //GoToURL("http://automationpractice.com");
-            //GoToURL("https://demo.openmrs.org/openmrs/");
-            //MaxWindow();
+            GoToURL("http://automationpractice.com");
+            MaxWindow();
 
             //
             signin.SignInRunner();
             //ContactUs.ContactUsRunner();
             //HomePage.HomePageRunner();
-            #region OMRS
-            
-            
-            #endregion
+
             wait(5000);
             close();
             quit();

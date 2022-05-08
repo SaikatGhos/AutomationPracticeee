@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using TestLib;
 namespace AutomationPracticeee
 {
     class HomePage:BaseMethods
@@ -48,7 +48,7 @@ namespace AutomationPracticeee
         }
         public static void HomePageRunner()
         {
-            VScroll(600);
+            //Scroll(scrollType.V, 600);
             wait(2000);
             //ToggleOnPopulerAndBestSeller();
             //VScroll(400);

@@ -36,33 +36,7 @@ namespace AutomationPracticeee
         {
             driver.Quit();
         }
-        public static void VScroll(int yPixel)
-        {
-            try
-            {
-                IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
-                var VS = String.Format("window.scrollTo(0, {0})", yPixel);
-                js.ExecuteScript(VS);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
-
-        }
-        public static void HScroll(int xPixel)
-        {
-            try
-            {
-                IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
-                var VS = String.Format("window.scrollTo({0}, 0)", xPixel);
-                js.ExecuteScript(VS);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
-        }
+        
         public static void CombineScroll(int xPixel, int yPixel)
         {
             try
@@ -74,6 +48,36 @@ namespace AutomationPracticeee
             catch (Exception e)
             {
                 Console.WriteLine(e);
+            }
+        }
+
+        public static void Scroll(scrollType type,int pixel)
+        {
+            if (type == scrollType.H)
+            {
+                try
+                {
+                    IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+                    var VS = String.Format("window.scrollTo({0}, 0)", pixel);
+                    js.ExecuteScript(VS);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
+            }
+            if (type == scrollType.V)
+            {
+                try
+                {
+                    IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+                    var VS = String.Format("window.scrollTo(0, {0})", pixel);
+                    js.ExecuteScript(VS);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
             }
         }
         
