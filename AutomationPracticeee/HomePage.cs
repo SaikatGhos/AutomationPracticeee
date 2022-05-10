@@ -25,6 +25,14 @@ namespace AutomationPracticeee
             Click(propertype.Xpath, "//ul[@id='homefeatured']/li[position()=2]/descendant::a[@class='quick-view']");
             
         }
+        private static void AddToWishList()
+        {
+            driver.SwitchTo().Frame(1);
+            wait(2000);
+            Click(propertype.Xpath, "//p[@id='quantity_wanted_p']//child::a[2]");
+            wait(2000);
+            Click(propertype.Xpath, "//*[@id='wishlist_button']");
+        }
         private static void ModalOperations()
         {
             driver.SwitchTo().Frame(1);
@@ -55,6 +63,7 @@ namespace AutomationPracticeee
             QuickViewOfFirstProduct();
             wait(3000);
             ModalOperations();
+            //AddToWishList();
             wait(3000);
         }
     }

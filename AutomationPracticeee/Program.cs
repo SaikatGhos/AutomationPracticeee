@@ -15,14 +15,16 @@ namespace AutomationPracticeee
             //driverInitializer(driversType.chrome);
             driver = new ChromeDriver();
 
-            //GoToURL("http://automationpractice.com");
+            GoToURL("http://automationpractice.com");
             //GoToURL("https://demo.openmrs.org/openmrs/");
             //MaxWindow();
 
             //
-            signin.SignInRunner();
+            //signin.SignInRunner();
             //ContactUs.ContactUsRunner();
-            //HomePage.HomePageRunner();
+            HomePage.HomePageRunner();
+            wait(2000);
+            //productRelatedTestCases.testCase7();
             #region OMRS
             
             

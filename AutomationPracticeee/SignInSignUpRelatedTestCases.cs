@@ -7,7 +7,7 @@ using TestLib;
 
 namespace AutomationPracticeee
 {
-    class signin:BaseMethods
+    class SignInSignUpRelatedTestCases:BaseMethods
     {
         private static void ClickOnSignInButton()
         {
