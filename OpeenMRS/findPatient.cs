@@ -13,7 +13,7 @@ namespace OpeenMRS
             Click(propertype.Xpath, "//*[@class='float-left']//child::li[4]//a");
             wait(2000);
             SendKeys(propertype.Xpath, "//*[@id='patient-search-form']//child::input","Baban");
-            wait(2000);
+            wait(3000);
         }
         
         public static void findPatientRunner()
